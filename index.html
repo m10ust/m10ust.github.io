@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M4Y0U — m10ust</title>
+<style>
+  :root {
+    --bg: #0d0d12;
+    --panel: #14141c;
+    --text: #e0e0e0;
+    --dim: #8a8a96;
+    --gold: #d4af37;
+    --red: #c0392b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  main { max-width: 640px; width: 100%; text-align: center; }
+  .avatar {
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    margin-bottom: 1.25rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12em;
+    color: #fff;
+  }
+  .tagline {
+    color: var(--dim);
+    margin: 0.6rem 0 2rem;
+    font-size: 0.95rem;
+  }
+  .tagline .arrow { color: var(--gold); }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: left;
+  }
+  .card {
+    display: block;
+    background: var(--panel);
+    border: 1px solid #26262f;
+    border-left: 3px solid var(--red);
+    border-radius: 6px;
+    padding: 0.9rem 1.1rem;
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .card:hover { border-left-color: var(--gold); transform: translateX(3px); }
+  .card .name { font-weight: 700; color: #fff; }
+  .card .desc { color: var(--dim); font-size: 0.85rem; margin-top: 0.25rem; }
+  footer { margin-top: 2.2rem; font-size: 0.85rem; }
+  footer a { color: var(--gold); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<main>
+  <img class="avatar" src="assets/avatar.jpg" alt="fractal avatar">
+  <h1>M4Y0U</h1>
+  <p class="tagline">Discoverer, hacker, dreamer, builder <span class="arrow">→</span> [repeat]</p>
+  <section class="projects">
+    <a class="card" href="https://github.com/m10ust/nethtop">
+      <span class="name">nethtop</span>
+      <div class="desc">htop-like network monitor — Python, cross-platform, 32★</div>
+    </a>
+    <a class="card" href="https://github.com/m10ust/machscope">
+      <span class="name">machscope</span>
+      <div class="desc">zero-dependency macOS forensic CLI — processes, launchd, Mach services, trust scoring</div>
+    </a>
+    <a class="card" href="/model-index/">
+      <span class="name">Model Index</span>
+      <div class="desc">M4YOU Fleet Score — the leaderboard the fleet actually runs on</div>
+    </a>
+  </section>
+  <footer>
+    <a href="https://github.com/m10ust">github.com/m10ust</a>
+  </footer>
+</main>
+</body>
+</html>
