@@ -4,8 +4,9 @@ Homepage hub for the m10ust GitHub Pages root site, live at **https://m10ust.git
 
 ## Purpose
 
-Single-page directory linking the public m10ust projects (nethtop, machscope, the Model Index).
-A hub, not a trophy wall — the receipts live in the repos themselves.
+Single-page directory linking the public m10ust projects. Cards point at GitHub repos,
+except **l1ackers**, which points at the live site (**https://l1ackers.com**) because that
+repo is private. A hub, not a trophy wall — the receipts live in the repos themselves.
 
 ## Ownership & workflow
 
